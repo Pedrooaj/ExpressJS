@@ -5,8 +5,7 @@ import mongoose from "mongoose";
 import dotenv from "dotenv";
 dotenv.config();
 
-mongoose.connect(process.env.API_KEY, {}).then(() => {
-    console.log("Conectado ao banco de dados");
+mongoose.connect(process.env.API_KEY, {}).then(() => {  
     app.emit("Pronto");
 }
 ).catch((err) => {
