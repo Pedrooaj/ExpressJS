@@ -1,13 +1,27 @@
 import express from "express";
 import { Routes } from "./routes.js";
-import { MeuMiddleware } from "./middlewares/middleware.js"
+import { MeuMiddleware } from "./middlewares/middleware.js";
+import mongoose from "mongoose";
+import dotenv from "dotenv";
+dotenv.config();
 
-export const app = express();
+mongoose.connect(process.env.API_KEY, {}).then(() => {
+    console.log("Conectado ao banco de dados");
+    app.emit("Pronto");
+}
+).catch((err) => {
+        console.log("Erro ao conectar ao banco de dados", err);
+        
+    }
+);
+
+const app = express();
 app.use(MeuMiddleware);
 app.use(express.urlencoded({ extended: true }), Routes);
 
 
-
-app.listen(3000, () => {
-    console.log("Servidor rodando na porta 3000");
+app.on("Pronto", () => {
+    app.listen(3000, () => {
+        console.log("Servidor rodando na porta 3000");
+    })
 })
