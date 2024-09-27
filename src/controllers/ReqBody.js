@@ -1,30 +1,27 @@
 // Exemplo Post com Get com req.body
 const ReqbodyGet = (req, res) => {
-    // criar sessão req.session.usuario = { nome: "Pedro", logado: true };
+    // // /* criar sessão */ req.session.usuario = { nome: "Pedro", logado: true };
     // apos a sessão criada ela vai ter um devido tempo para expirar.
-    console.log(req.session.usuario);
-    
-    
+    // console.log(req.session.usuario);
+    //  so conseguem ser acessadas uma unica vez
     // req.flash("info", "Ola Mundo...");
     // req.flash("sucess", "Sucesso!!!");
     // req.flash("error", "Erro!!!");
+    // console.log(req.flash('error'), req.flash("sucess"),  req.flash("info"));
+    
+    res.render("index", {
+        titulo: "Este é o titulo",
+        numeros: [1, 2, 3, 4, 5],
+    });
 
-    console.log(req.flash('error'), req.flash("sucess"));
+    return
     
-    
-    
-
-    res.send(`
-        <form action="/" method="POST">
-        Nome do cliente: <input type="text" name="nome" />
-        <button>Enviar</button>
-        </form>    
-        `)
 }
 
 const ReqbodyPost = (req, res) => {
-    console.log(req.body);
-    res.send(`Recebi seu valor: ${req.body.nome}`);
+    console.log("Token CSRF: " + req.body._csrf);
+    res.send(req.body);
+    return;
 
 }
 

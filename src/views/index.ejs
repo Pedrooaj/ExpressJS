@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<%- include("./includes/head.ejs") %>
+<body>
+  <section class="container">
+    <h1>
+      Titulo
+    </h1>
+    <p><%= variavelLocal %></p>
+
+    <form action="/" method="post">
+      <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+      <label>Cliente</label>
+      <input type="text" name="cliente">
+      <button>Submit</button>
+    </form>
+  </section>
+  <script src="./assets/js/bundle.js"></script>
+</body>
+
+</html>
