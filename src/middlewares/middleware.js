@@ -8,8 +8,6 @@ export const MeuMiddleware = (req, res, next) => {
     next();
 }
 
-
-
 export const checkCsrfError = (err, req, res, next) => {
     if(err && 'EBADCSRFTOKEN' === err.code) {
         res.render('404');
