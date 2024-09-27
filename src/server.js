@@ -56,7 +56,6 @@ app.use(csurf()); // Middleware CSRF
 app.use(helmet()); // Middleware de segurança
 app.use(csrfMiddleware); // Middleware CSRF para gerar token
 app.use(MeuMiddleware);
-
 app.use(Routes); 
 app.use(checkCsrfError); // Middleware para verificar erros CSRF
 

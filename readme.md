@@ -1,6 +1,6 @@
 
 ## ExpressJS
-Este e um repositorio direcionado a meu aprendizado em criação de Api's e algumas outras tecnologias.
+Este e um repositorio direcionado a meu aprendizado em criação de Api's e desenvolvimento back-end com banco de dados Não Relacional.
 ## Tecnologias utilizadas
 
 - **Express**: para facilitar na criação da Api
