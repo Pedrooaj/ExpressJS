@@ -24,7 +24,7 @@ Instale my-project com npm
     
 ## Oque tem neste repositorio?
 Neste repositorio você ira encontrar exemplo de rotas para acessarmos, e támbem controllers para organizar rotas individualmente, alguns middlewares para executarmos funções nas requisições http, conexão com banco de dados MongoDB, geração de tokens CFRS com middlewares e implementação no middleware global.
-O padrão utilizado neste projeto foi **MVC**.
+O padrão utilizado neste projeto foi **MVC**. \**
 O MVC é uma sigla do termo em inglês Model (modelo) View (visão) e Controller (Controle) que facilita a troca de informações entre a interface do usuário aos dados no banco, fazendo com que as respostas sejam mais rápidas e dinâmicas.
 
 
