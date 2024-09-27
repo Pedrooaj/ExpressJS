@@ -67,6 +67,7 @@ app.use(checkCsrfError); // Middleware para verificar erros CSRF
 
 // Configuração do Express para receber dados de formulários e rotas
 app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
 app.use(Routes);
 
 
