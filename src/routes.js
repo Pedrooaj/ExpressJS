@@ -6,10 +6,10 @@ import HomeModel from "./models/homeModule.js";
 
 export const Routes = Router();
 
-HomeModel.create({
-    titulo: "Apenas um Teste",
-    descricao: "Descrição..."
-}).then(dados => console.log(dados)).catch(err => console.log(err));
+// HomeModel.create({
+//     titulo: "Apenas um Teste",
+//     descricao: "Descrição..."
+// }).then(dados => console.log(dados)).catch(err => console.log(err));
 
 // Exemplo de req.query
 Routes.get('/consulta', ReqQuery);
