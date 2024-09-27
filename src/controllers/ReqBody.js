@@ -13,6 +13,7 @@ const ReqbodyGet = (req, res) => {
     // req.flash("error", "Erro!!!");
     // console.log(req.flash('error'), req.flash("sucess"),  req.flash("info"));
     
+    // Aqui ele ira renderizar a pagina index.ejs com a view engine ejs e os dados passados por {} 
     res.render("index", {
         titulo: "Este é o titulo",
         numeros: [1, 2, 3, 4, 5],

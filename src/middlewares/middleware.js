@@ -3,7 +3,6 @@
 
 export const MeuMiddleware = (req, res, next) => {
     res.locals.variavelLocal = "Este é o valor da variavel.";
-
     console.log("Você passou pelo middleware global");
     next();
 }
