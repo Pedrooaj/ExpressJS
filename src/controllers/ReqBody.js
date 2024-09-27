@@ -1,4 +1,7 @@
 // Exemplo Post com Get com req.body
+// Pode ser utilizado um formulário para enviar dados para o servidor com metodo POST(Para enviar) e GET Para receber
+
+
 const ReqbodyGet = (req, res) => {
     /* criar sessão  req.session.usuario = { nome: "Pedro", logado: true }; */
     // apos a sessão criada ela vai ter um devido tempo para expirar.
@@ -15,7 +18,7 @@ const ReqbodyGet = (req, res) => {
         numeros: [1, 2, 3, 4, 5],
     });
 
-    return
+    return;
     
 }
 
