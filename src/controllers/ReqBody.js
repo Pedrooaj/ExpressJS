@@ -1,9 +1,10 @@
 // Exemplo Post com Get com req.body
 const ReqbodyGet = (req, res) => {
-    // // /* criar sessão */ req.session.usuario = { nome: "Pedro", logado: true };
+    /* criar sessão  req.session.usuario = { nome: "Pedro", logado: true }; */
     // apos a sessão criada ela vai ter um devido tempo para expirar.
     // console.log(req.session.usuario);
-    //  so conseguem ser acessadas uma unica vez
+    
+    // connection-flash req.flash so conseguem ser acessadas uma unica vez
     // req.flash("info", "Ola Mundo...");
     // req.flash("sucess", "Sucesso!!!");
     // req.flash("error", "Erro!!!");
