@@ -12,15 +12,33 @@ Este e um repositorio direcionado a meu aprendizado em criação de Api's e dese
 - **Ejs**: Engine view utilizada para exibir paginas no express.
 
 
+## Rodando localmente
 
-## Instalação
-
-Instale my-project com npm
+Clone o projeto
 
 ```bash
-  npm install my-project
-  cd my-project
+  git clone 
 ```
+
+Entre no diretório do projeto
+
+```bash
+  cd Agenda
+```
+
+Instale as dependências
+
+```bash
+  npm install
+```
+
+Inicie o servidor
+
+```bash
+  npm run dev
+```
+
+
     
 ## Oque tem neste repositorio?
 Neste repositorio você ira encontrar exemplo de rotas para acessarmos, e támbem controllers para organizar rotas individualmente, alguns middlewares para executarmos funções nas requisições http, conexão com banco de dados MongoDB, geração de tokens CFRS com middlewares e implementação no middleware global.
