@@ -10,34 +10,7 @@ Este e um repositorio direcionado a meu aprendizado em criação de Api's e dese
 - **Csurf**: Serve para efetuar criação de CSRF tokens. Para maior segurança.
 - **Mongoose**: Para facilitar a conexão com o banco de Dados MongoDB.
 - **Ejs**: Engine view utilizada para exibir paginas no express.
-
-
-## Rodando localmente
-
-Clone o projeto
-
-```bash
-  git clone 
-```
-
-Entre no diretório do projeto
-
-```bash
-  cd Agenda
-```
-
-Instale as dependências
-
-```bash
-  npm install
-```
-
-Inicie o servidor
-
-```bash
-  npm run dev
-```
-
+- **Dotenv** e utilizado para salvar variaveis de ambientes e proteger as infomações de conexão do banco de dados.
 
     
 ## Oque tem neste repositorio?
